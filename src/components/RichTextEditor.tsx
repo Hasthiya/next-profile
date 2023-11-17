@@ -5,7 +5,7 @@ import StarterKit from '@tiptap/starter-kit'
 import Placeholder from '@tiptap/extension-placeholder'
 import Toolbar from "@/components/Toolbar";
 
-const Editor = () => {
+const RichTextEditor = () => {
     const editor: Editor | null = useEditor({
         extensions: [
             StarterKit,
@@ -33,4 +33,4 @@ const Editor = () => {
     )
 };
 
-export default Editor;
+export default RichTextEditor;
