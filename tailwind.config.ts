@@ -1,9 +1,13 @@
+import plugin from "tailwindcss/plugin";
+
+const { fontFamily } = require("tailwindcss/defaultTheme")
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
+    './components/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
 	],
@@ -16,6 +20,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-sans)", ...fontFamily.sans],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -72,5 +79,12 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),
+    plugin(function({ addBase, theme }) {
+      addBase({
+        'h1': { fontSize: theme('fontSize.2xl') },
+        'h2': { fontSize: theme('fontSize.xl') },
+        'h3': { fontSize: theme('fontSize.lg') },
+      })
+  })],
 }
