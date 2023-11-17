@@ -9,7 +9,11 @@ const Editor = () => {
     const editor: Editor | null = useEditor({
         extensions: [
             StarterKit,
-            Placeholder,
+            Placeholder.configure({
+                placeholder: 'Write something wonderful',
+                emptyEditorClass:
+                    'cursor-text before:content-[attr(data-placeholder)] before:absolute before:top-2 before:text-mauve-11 before:opacity-50 before-pointer-events-none',
+            })
         ],
         editorProps: {
             attributes: {

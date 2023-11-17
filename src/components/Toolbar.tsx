@@ -14,8 +14,8 @@ const Toolbar = ({ editor }: ToolbarProps) => {
         <div className='border border-input bg-transparent mb-2'>
             <Toggle
                 size='sm'
-                pressed={editor.isActive("heading", { level: 2})}
-                onPressedChange={() => editor.chain().focus().toggleHeading({ level: 2 }).run()}
+                pressed={editor.isActive("heading", { level: 1})}
+                onPressedChange={() => editor.chain().focus().toggleHeading({ level: 1 }).run()}
             >
                 <Heading1 className={'h-4 w-4'}/>
             </Toggle>
