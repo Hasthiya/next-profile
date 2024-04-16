@@ -7,6 +7,7 @@ export default function Home() {
     <main className="p-5">
       {/*<Nav />*/}
       {/*<RichTextEditor />*/}
+      {/* this code is commited from vscode web editor */}
         <ChatBot/>
     </main>
   )
