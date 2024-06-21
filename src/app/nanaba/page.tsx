@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import {Parallax, ParallaxLayer} from '@react-spring/parallax'
 
@@ -54,7 +54,7 @@ const Page = () => {
                         <div className="container mx-auto px-6 text-center">
                             <h2 className="text-3xl font-bold mb-6">Meeting Genpa and Genma</h2>
                             <p className="text-lg">
-                                Nanaba’s life truly began when he was packaged and shipped off to his new home. A boy named Genpa from Sri Lanka, who had a kind heart and loved making others happy, ordered Nanaba online. Genpa was in a long-distance relationship with his girlfriend Genma, who lived in another country. He wanted to send her something special, something that would comfort her in his absence. When Nanaba arrived at Genma's doorstep, she was overjoyed.
+                                Nanaba’s life truly began when he was packaged and shipped off to his new home. A boy named Genpa from Sri Lanka, who had a kind heart and loved making others happy, ordered Nanaba online. Genpa was in a long-distance relationship with his girlfriend Genma, who lived in another country. He wanted to send her something special, something that would comfort her in his absence. When Nanaba arrived at Genma`s doorstep, she was overjoyed.
                             </p>
                         </div>
                     </div>
